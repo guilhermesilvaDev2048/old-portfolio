@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 #home {
-	background: #292d35;
+	background: #030010;
 	color: white;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .caixa {
-	background: #292d35;
+	background: #030010;
 	padding: 60px 0;
 	border-bottom: 1px solid #e5e5e5;
 	color: white;
@@ -45,7 +45,7 @@ h2 {
 }
 
 #text {
-	color: rgb(128, 0, 255);
+	color: rgb(255, 255, 255);
 }
 
 
@@ -93,22 +93,22 @@ h2 {
 	margin-top: 270px;
 	margin-left: 0px;
 	margin-bottom: 300px;
-	width: 350px;
+	width: 340px;
 	animation: flutuando01 6s ease;
 	animation-iteration-count: infinite;
 }
 
 @keyframes flutuando01 {
 	0% {
-		transform: scale(0.5);
+		transform: scale(0.4);
 	}
 
 	50% {
-		transform: scale(1);
+		transform: scale(0.9);
 	}
 
 	100% {
-		transform: scale(0.5);
+		transform: scale(0.4);
 	}
 }
 
@@ -161,6 +161,20 @@ h2 {
 	}
 }
 
+@media screen and (max-width:  836px) {
+   	.col-md-5 {
+        display: none;
+    }
+	.codificacao{
+		margin-left: 3vw;
+        width: 160px;
+    }
+
+	#habilidades img {
+		width: 300px;
+	}
+}
+
 .entre-outras {
 	align-items: center;
 	text-align: center;
@@ -169,4 +183,19 @@ h2 {
 
 #buttoncontato, #mylinkedin, #entreemcontato, #text, #devfrontend, #codificacao {
 	visibility: hidden;
+}
+
+#habilidades {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#habilidades img {
+	margin-left: 5px;
+}
+
+span {
+	color: rgb(128, 0, 255);
 }
